@@ -2,9 +2,17 @@ package com.wipro.streamapi;
 
 public class Student {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    private int rollNo;
+    private String name;
+    private int mark;
 
-	}
+    public Student(int rollNo, String name, int mark) {
+        this.rollNo = rollNo;
+        this.name = name;
+        this.mark = mark;
+    }
 
+    public int getMark() {
+        return mark;
+    }
 }

@@ -2,9 +2,24 @@ package com.wipro.streamapi;
 
 public class Employee {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    private int empNo;
+    private String name;
+    private int age;
+    private String location;
 
-	}
+    public Employee(int empNo, String name, int age, String location) {
+        this.empNo = empNo;
+        this.name = name;
+        this.age = age;
+        this.location = location;
+    }
 
+    public String getLocation() {
+        return location;
+    }
+
+    @Override
+    public String toString() {
+        return empNo + " " + name + " " + age + " " + location;
+    }
 }
