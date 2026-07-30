@@ -19,13 +19,11 @@ public class Main {
         StudentReport report = new StudentReport();
 
         System.out.println("Grades:");
+
         for (Student s : students) {
             try {
-                if (s != null) {
-                    System.out.println(s.getName() + " : " + report.validate(s));
-                } else {
-                    report.validate(s);
-                }
+                report.validate(s);
+                System.out.println(s.getName() + " : " + report.findGrades(s));
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
